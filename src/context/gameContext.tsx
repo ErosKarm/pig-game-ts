@@ -44,14 +44,18 @@ function reducer(state: stateType, action: actionType) {
       const rolledDice = generateRolledDice();
 
       if (rolledDice === 1 && state.activePlayer === 1) {
-        return { ...state, activePlayer: 2, curScore: 0 };
+        return { ...state, activePlayer: 2, curScore: 0, dice: 1 };
       }
 
       if (rolledDice === 1 && state.activePlayer === 2) {
-        return { ...state, activePlayer: 1, curScore: 0 };
+        return { ...state, activePlayer: 1, curScore: 0, dice: 1 };
       }
 
-      return { ...state, curScore: state.curScore + rolledDice };
+      return {
+        ...state,
+        curScore: state.curScore + rolledDice,
+        dice: rolledDice,
+      };
     }
 
     // Holing a score

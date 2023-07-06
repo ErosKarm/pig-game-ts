@@ -38,7 +38,8 @@ function App() {
               NEW GAME
             </Button>
             <img
-              src={"/dice-" + String(state.dice) + ".png"}
+              src={`/dice-${state.dice}.png`}
+              // src={"/dice-" + state.dice + ".png"}
               width={100}
               className="z-10 mb-36 max-[639px]:mb-14 max-[639px]:w-[60px] sm:mb-16 md:mb-28 lg:mb-36"
             />

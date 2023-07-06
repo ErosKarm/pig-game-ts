@@ -7,3 +7,10 @@
 * {
   font-family: "Poppins", sans-serif;
 }
+
+.bg-image {
+  background-image: url(/public/pig.png);
+  background-repeat: no-repeat;
+  background-position: -200px;
+  background-size: contain;
+}

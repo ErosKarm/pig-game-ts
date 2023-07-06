@@ -8,7 +8,7 @@ type PlayerType = {
 };
 
 function Player({ active, score, hold, hasWonPlayer }: PlayerType) {
-  const isActive = active ? "bg-emerald-600" : "bg-emerald-800";
+  const isActive = active ? "bg-emerald-600/80" : "bg-emerald-800/80";
   const isActive2 = active ? "bg-emerald-700" : "bg-emerald-900";
   const isActive3 = active ? "bg-green-500" : "bg-red-500";
 

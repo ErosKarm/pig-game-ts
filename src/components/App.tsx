@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <div className="flex h-screen flex-col items-center justify-center bg-emerald-700">
+      <div className="bg-image flex h-screen flex-col items-center justify-center bg-emerald-700">
         <h1 className="mb-2 font-['Press_Start_2P'] text-6xl font-semibold text-white max-[639px]:text-4xl">
           PIG GAME
         </h1>

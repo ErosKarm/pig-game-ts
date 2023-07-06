@@ -30,20 +30,11 @@ To install and run the game locally, follow these steps:
 1. Clone the repository:
    git clone <repository-url>
 
-css
-Copy code
-
 2. Navigate to the project directory:
    cd pig-game
 
-markdown
-Copy code
-
 3. Install the dependencies:
    npm install
-
-markdown
-Copy code
 
 4. Start the development server:
    npm start

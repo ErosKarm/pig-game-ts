@@ -2,6 +2,8 @@
 
 This is a simple dice game called PIG-GAME, designed for two players. The objective of the game is to accumulate a high score by rolling a dice. However, rolling a 1 will result in the player losing their current score and their turn. The game ends when one of the players reaches a maximum score of 100.
 
+![pig](https://github.com/ErosKarm/pig-game-ts/assets/48349453/89b430bf-35a8-40bd-9481-582a5df9a1ab)
+
 ## How to Play
 
 1. The game starts with Player 1.

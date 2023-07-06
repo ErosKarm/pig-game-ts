@@ -14,7 +14,7 @@ function Player({ active, score, hold, hasWonPlayer }: PlayerType) {
 
   return (
     <div
-      className={`${isActive} shadow-lg text-white h-[600px] w-[500px] flex items-center flex-col  rounded-md relative`}
+      className={`${isActive} relative flex flex-col items-center overflow-hidden rounded-md text-white shadow-lg max-[639px]:h-[300px] max-[639px]:w-[170px] max-[639px]:px-4 sm:h-[400px] sm:w-[300px]  md:h-[500px] md:w-[380px] lg:h-[600px] lg:w-[500px]`}
     >
       {hasWonPlayer ? (
         <Confetti
@@ -28,17 +28,25 @@ function Player({ active, score, hold, hasWonPlayer }: PlayerType) {
         ""
       )}
       <span
-        className={`p-4 rounded-full  ml-4 mt-4 absolute ${isActive3}`}
+        className={` absolute  mt-4 flex items-center rounded-full p-4 sm:mt-3 sm:p-3 md:mt-3 md:p-4 lg:mt-4 lg:p-4 ${isActive3} max-[639px]:mb-4 max-[639px]:p-3`}
       ></span>
-      <h2 className={`text-4xl mt-24 uppercase `}>Player 1</h2>
+      <h2
+        className={` mt-24 font-medium uppercase  max-[639px]:mt-12 sm:mt-12 sm:text-2xl md:mt-16 md:text-3xl lg:mt-24 lg:text-4xl`}
+      >
+        Player
+      </h2>
 
-      <span className="text-8xl mt-16">{hold}</span>
+      <span className="text-8xl max-[639px]:mt-8 max-[639px]:text-6xl sm:mt-16 sm:text-7xl md:mt-16 md:text-8xl  lg:mt-16 lg:text-8xl ">
+        {hold}
+      </span>
 
       <div
-        className={`${isActive2} px-20 py-6 flex flex-col items-center gap-2 uppercase mt-32 rounded-md`}
+        className={`${isActive2} mt-32 flex flex-col items-center gap-2 rounded-md px-20 py-6 uppercase max-[639px]:mt-12  max-[639px]:px-3 max-[639px]:py-2 sm:mt-20 sm:px-10 sm:py-2 md:mt-28 md:px-12 md:py-3 lg:mt-36 lg:px-20`}
       >
-        <p>Current</p>
-        <span className="text-6xl">{score}</span>
+        <p className="max-[639px]:text-xs">Current</p>
+        <span className="text-6xl max-[639px]:text-2xl sm:text-3xl md:text-4xl">
+          {score}
+        </span>
       </div>
     </div>
   );

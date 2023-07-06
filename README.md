@@ -39,7 +39,7 @@ To install and run the game locally, follow these steps:
    npm install
 
 4. Start the development server:
-   npm start
+   npm run dev
 
 5. Open your web browser and visit `http://localhost:3000` to play the PIG-GAME.
 
